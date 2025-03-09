@@ -1,8 +1,5 @@
-﻿using System;
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
 
 using Mouse_Avoider.Source.Core;
 using Mouse_Avoider.Source.Core.Managers;
@@ -38,6 +35,7 @@ public class Main : Game
 
 	protected override void Update(GameTime gameTime)
 	{
+		InputManager.Update(gameTime);
 		GameWorld.UpdateWorld(gameTime);
 	}
 
